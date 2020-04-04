@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Star Wars - Véhicules</title>
+    <script defer src="js/vehicles.js"></script>
+    <link rel="stylesheet" href="css/vehicles.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Comparer les véhicules de Star Wars</legend>
+            <label for="vh">Véhicules: </label>
+            <select id="vh" name="vh" required>
+                <option>Loading...</option>
+            </select>
+            <button type="button" onclick="addVh()">Ajouter véhicule</button>
+        </fieldset>
+    </form>
+    <H2> Table des véhicules de Star Wars (en anglais)</H2>
+    <div class="tcont">
+    <table>
+        <thead>
+            <tr>
+                <th>ordre</th>
+                <th>nom</th>
+                <th>modèle</th>
+                <th>constructeur</th>
+                <th>classe</th>
+                <th>prix</th>
+                <th>longueur</th>
+                <th>vitesse max.</th>
+                <th>équipage</th>
+                <th>passagers</th>
+                <th>X</th>
+            </tr>
+        </thead>
+        <tbody id="vhTable">
+            <!-- vehicles.js -->
+        </tbody>
+    </table>
+    </div>
+    <button onclick="emptyTable();">Vider la table</button>
+</body>
+</html>

@@ -1,0 +1,17 @@
+table {
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid black;
+    padding: 5px;
+}
+th {
+     background-color: lightgray;
+}
+th:first-child {
+    background-color: darkgray;
+}
+
+.tcont {
+    overflow: auto;
+}
